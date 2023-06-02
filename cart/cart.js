@@ -1,6 +1,6 @@
 const currentUser = localStorage.getItem("currentUser");
 if (currentUser === null) {
-    window.location.href = "./index.html";
+    window.location.href = "https://github.com/bharath1098/f3module-test/index.html";
 }
 const currentUserObject = JSON.parse(currentUser);
 const currentUserEmail = currentUserObject.email; 
@@ -74,7 +74,7 @@ function loadCartUI() {
                 const currentUserCartObject = JSON.parse(currentUserCart)
                 currentUserCartObject[currentUserEmail] = userCart;
                 localStorage.setItem("curretUserCart", JSON.stringify(currentUserCartObject))
-                window.location.href = "../cart/cart.html";
+                window.location.href = "https://bharath1098.github.io/f3module-test/cart/cart.html";
             }
         })
     })
@@ -115,7 +115,7 @@ if (((JSON.parse(currentUserCart))[currentUserEmail]).length > 0) {
 } else {
     // update cart as no item and summary will be 0
     const emptyCart = document.createElement("img")
-    emptyCart.src = '../images/empty-cart.jpg';
+    emptyCart.src = 'https://bharath1098.github.io/f3module-test/images/empty-cart.jpg';
     emptyCart.style.width = "100%"
     emptyCart.style.height = "470px"
     cartCardContainer.appendChild(emptyCart);

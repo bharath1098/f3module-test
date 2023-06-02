@@ -1,5 +1,4 @@
 // duplicate email check
-
 function checkDuplicateEmail(email) {
     const allUser = localStorage.getItem("user")
     if(allUser === null){
@@ -47,7 +46,7 @@ function validateAndCreateUser(firstName, lastname, email, password, confirmPass
         }
         localStorage.setItem("user", JSON.stringify(usersObj));
     }
-    window.location.href = "../login/login.html"
+    window.location.href = "https://bharath1098.github.io/f3module-test/login/login.html"
     alert("Signup Successfull, try Login");
 }
 

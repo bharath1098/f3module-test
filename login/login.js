@@ -36,11 +36,10 @@ document.getElementById("login_form_btn").addEventListener("click", async (e) =>
     const userloggedIn = loginToShopPage();
     userloggedIn
         .then(() => {
-            window.location.href = "../loading.html"
+            window.location.href = "https://bharath1098.github.io/f3module-test/loading.html"
         })
         .catch((err) => {
             console.log(err)
             alert("Wrong Credentials");
         })
 })
-l

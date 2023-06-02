@@ -5,7 +5,7 @@ const lastName = document.getElementById("profile_input_lastname");
 
 document.getElementById("user-logout").addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.href = "../index.html"
+    window.location.href = "https://bharath1098.github.io/f3module-test/index.html"
     localStorage.removeItem("currentUser");
 })
 document.getElementById("profile_saveinfo_btn").addEventListener("click", (e) => {
@@ -50,7 +50,7 @@ document.getElementById("profile_change_password_btn").addEventListener("click",
 const currentUserRaw = localStorage.getItem("currentUser");
 
 if (currentUserRaw === null) {
-    window.location.href = "./index.html";
+    window.location.href = "https://bharath1098.github.io/f3module-test/index.html";
 }else{
     const [name, last] = currentUser.name.split(" ");
     firstName.value = name;

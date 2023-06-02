@@ -30,7 +30,7 @@ function appendDataOnUI() {
         clothsContainer.className = "cloths_container";
 
         const clothsHeading = document.createElement("h1")
-        clothsHeading.innerHTML = `${category}`;
+        clothsHeading.innerHTML = `${category}`
         clothsContainer.appendChild(clothsHeading);
 
         const clothsCardContainer = document.createElement("div")
@@ -210,7 +210,7 @@ async function fetchData() {
 // redirecting user if user is not logged in
 const currentUser = localStorage.getItem("currentUser");
 if (currentUser === null) {
-    window.location.href = "./index.html";
+    window.location.href = "https://bharath1098.github.io/f3module-test/index.html";
 }
 // fiter from search bar
 

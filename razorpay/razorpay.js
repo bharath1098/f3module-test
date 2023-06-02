@@ -63,7 +63,7 @@ btn.addEventListener("click", async (e) => {
     //   .catch(error => {
     //     console.error('Error creating order:', error);
         
-    //     window.location.href("https://nikhil-rawat02.github.io/shopping-project/cart/cart.html")
+    //     window.location.href("../cart/cart.html")
     //   });
     // }
 
